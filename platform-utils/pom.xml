@@ -8,7 +8,7 @@
         <groupId>ru.mirea</groupId>
         <version>0.0.1</version>
     </parent>
-    <groupId>org.example</groupId>
+    <groupId>ru.mirea</groupId>
     <artifactId>platform-utils</artifactId>
 
     <properties>
