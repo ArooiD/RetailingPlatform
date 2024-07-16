@@ -13,19 +13,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0220e0a-770d-4c81-ac11-28015eae85e1" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger" beforeDir="false" afterPath="$PROJECT_DIR$/logger" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logger/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outlets/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/outlets/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform-utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platform-utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/storage/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f0220e0a-770d-4c81-ac11-28015eae85e1" name="Changes" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,17 +98,17 @@
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/react/reactive",
+    "last_opened_file_path": "D:/IP/RetailingPlatform",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15332031",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "72e5c59625e5acd41414e0ea9f2d4dad",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "168a203d88129bbce0757ad32c7fb0d7",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -293,7 +290,9 @@
       <updated>1721151835676</updated>
       <workItem from="1721151836754" duration="6058000" />
       <workItem from="1721159457334" duration="1793000" />
-      <workItem from="1721161272145" duration="371000" />
+      <workItem from="1721161272145" duration="706000" />
+      <workItem from="1721161986099" duration="109000" />
+      <workItem from="1721162165594" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="Инициализация проекта">
       <option name="closed" value="true" />
@@ -351,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721161474913</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1">
+      <option name="closed" value="true" />
+      <created>1721161674621</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721161674621</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,6 +389,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="Инициализация проекта" />
     <MESSAGE value="1" />
     <option name="LAST_COMMIT_MESSAGE" value="1" />
