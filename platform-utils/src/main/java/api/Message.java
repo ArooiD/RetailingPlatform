@@ -18,6 +18,6 @@ public class Message {
     }
 
     public <T> T get(Class<T> tClass){
-
+        return null;
     }
 }

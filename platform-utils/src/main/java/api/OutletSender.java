@@ -17,7 +17,7 @@ public class OutletSender implements ModuleSender{
     }
 
     @Override
-    public <T> Message delete(Endpoint endpoint) {
+    public Message delete(Endpoint endpoint) {
         return null;
     }
 }

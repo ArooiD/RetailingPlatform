@@ -17,7 +17,7 @@ public class StorageSender implements ModuleSender {
     }
 
     @Override
-    public <T> Message delete(Endpoint endpoint, T body) {
+    public Message delete(Endpoint endpoint) {
         return null;
     }
 }

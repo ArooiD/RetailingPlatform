@@ -1,6 +1,6 @@
 package api;
 
-public class ShowCaseSender implements ModuleSender{
+public class ShowCaseSender extends AbstractModuleSender implements ModuleSender{
     @Override
     public Message get(Endpoint endpoint) {
         return null;
@@ -17,7 +17,7 @@ public class ShowCaseSender implements ModuleSender{
     }
 
     @Override
-    public <T> Message delete(Endpoint endpoint, T body) {
+    public Message delete(Endpoint endpoint) {
         return null;
     }
 }
