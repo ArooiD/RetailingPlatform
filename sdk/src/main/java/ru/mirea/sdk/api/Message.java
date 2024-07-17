@@ -21,7 +21,7 @@ public class Message {
 
     protected Message(Exception e) {
         this.statusCode = HttpStatusCode.valueOf(400);
-        this.body = null;
+        this.body = e.getMessage();
     }
 
     protected Message(HttpStatusCode statusCode, InputStream body) throws IOException {
