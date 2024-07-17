@@ -30,7 +30,17 @@ public class Message {
         body.close();
     }
 
-    public <T> T get(Class<T> tClass){
+    public <T> T unWrapBody(Class<T> tClass){
         return objectMapper.convertValue(this.body, tClass);
     }
+
+    public Integer unWrapCode(){
+        return this.statusCode.value();
+    }
+
+    public Boolean isSuccess(){
+        return !this.statusCode.isError();
+    }
+
+    public HttpStatusCode getStatusCode(){return this.statusCode;}
 }

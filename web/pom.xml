@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>ru.mirea</groupId>
-            <artifactId>sdk</artifactId>
+            <artifactId>Sdk</artifactId>
             <version>0.0.1</version>
         </dependency>
     </dependencies>

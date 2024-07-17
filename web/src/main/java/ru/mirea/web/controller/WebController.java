@@ -21,6 +21,6 @@ public class WebController {
 
     @GetMapping("fabric")
     public String fabric() {
-        return webService.test();
+        return webService.testGetRequest();
     }
 }
