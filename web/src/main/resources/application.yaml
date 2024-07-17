@@ -1,12 +1,13 @@
 db:
-  name: public
+  name: postgres
   address: ${Server.postgres.host}
   port: ${Server.postgres.port}
   username: ${Server.postgres.login}
   password: ${Server.postgres.password}
-
 spring:
   jpa:
+    hibernate:
+      ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
     open-in-view: false
@@ -17,3 +18,5 @@ spring:
     driver-class-name: org.postgresql.Driver
   application:
     name: "web"
+
+

@@ -7,6 +7,8 @@ import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.util.Date;
 import java.util.UUID;
@@ -24,8 +26,10 @@ public class Promo {
     private String name;
     @Column(name = "sale")
     private Double sale;
-    @Column(name = "start")
-    private Date start;
-    @Column(name = "end")
-    private Date end;
+    @Column(name = "startTime")
+    @JdbcTypeCode(SqlTypes.TIMESTAMP)
+    private Date startTime;
+    @Column(name = "endTime")
+    @JdbcTypeCode(SqlTypes.TIMESTAMP)
+    private Date endTime;
 }

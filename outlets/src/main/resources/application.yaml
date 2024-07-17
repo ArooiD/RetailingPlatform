@@ -1,20 +1,21 @@
 db:
-  name: public
+  name: postgres
   address: ${Server.postgres.host}
   port: ${Server.postgres.port}
   username: ${Server.postgres.login}
   password: ${Server.postgres.password}
 
-
 spring:
   jpa:
+    hibernate:
+      ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
     open-in-view: false
   datasource:
     url: 'jdbc:postgresql://${db.address}:${db.port}/${db.name}'
-    username: '${db.username}'
-    password: '${db.password}'
+    username: ${db.username}
+    password: ${db.password}
     driver-class-name: org.postgresql.Driver
   application:
     name: "Outlet"

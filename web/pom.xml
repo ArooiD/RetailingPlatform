@@ -27,10 +27,6 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
-        </dependency>
-        <dependency>
             <groupId>ru.mirea</groupId>
             <artifactId>Sdk</artifactId>
             <version>0.0.1</version>

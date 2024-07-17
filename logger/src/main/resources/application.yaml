@@ -18,4 +18,4 @@ spring:
     password: ${db.password}
     driver-class-name: org.postgresql.Driver
   application:
-    name: "logger"
+    name: "Logger"

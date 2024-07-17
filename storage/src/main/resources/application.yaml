@@ -1,5 +1,5 @@
 db:
-  name: public
+  name: postgres
   address: ${Server.postgres.host}
   port: ${Server.postgres.port}
   username: ${Server.postgres.login}
@@ -7,6 +7,8 @@ db:
 
 spring:
   jpa:
+    hibernate:
+      ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
     open-in-view: false
