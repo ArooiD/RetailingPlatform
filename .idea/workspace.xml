@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Logger:war" />
-      <artifact name="Outlets:war" />
-      <artifact name="ShowCase:war" />
-      <artifact name="Storage:war" />
+      <artifact name="logger:war" />
+      <artifact name="outlets:war" />
+      <artifact name="showcase:war" />
+      <artifact name="storage:war" />
       <artifact name="web:war" />
     </artifacts-to-build>
   </component>
@@ -13,7 +13,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0220e0a-770d-4c81-ac11-28015eae85e1" name="Changes" comment="Заготовка" />
+    <list default="true" id="f0220e0a-770d-4c81-ac11-28015eae85e1" name="Changes" comment="Заготовка">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logger/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outlets/src/main/java/ru/mirea/shops/entity/extend/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outlets/src/main/java/ru/mirea/shops/entity/extend/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outlets/src/main/java/ru/mirea/shops/entity/local/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outlets/src/main/java/ru/mirea/shops/entity/local/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outlets/src/main/java/ru/mirea/shops/entity/local/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outlets/src/main/java/ru/mirea/shops/repository/ShopRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outlets/src/main/java/ru/mirea/shops/repository/StoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outlets/src/main/java/ru/mirea/shops/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outlets/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showcase/src/main/java/ru/mirea/showcase/entity/local/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showcase/src/main/java/ru/mirea/showcase/entity/local/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showcase/src/main/java/ru/mirea/showcase/entity/local/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showcase/src/main/java/ru/mirea/showcase/entity/local/Promo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showcase/src/main/java/ru/mirea/showcase/repository/BrandRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showcase/src/main/java/ru/mirea/showcase/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showcase/src/main/java/ru/mirea/showcase/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showcase/src/main/java/ru/mirea/showcase/repository/PromoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showcase/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/src/main/java/ru/mirea/storage/entity/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/src/main/java/ru/mirea/storage/entity/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/src/main/java/ru/mirea/storage/entity/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/src/main/java/ru/mirea/storage/repository/ProviderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/src/main/java/ru/mirea/storage/repository/StockRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/src/main/java/ru/mirea/storage/repository/StorageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outlets/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/outlets/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outlets/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outlets/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/src/main/java/ru/mirea/sdk/api/AbstractModuleSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/src/main/java/ru/mirea/sdk/api/AbstractModuleSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/src/main/java/ru/mirea/sdk/genearators/ShopPlannerGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/src/main/java/ru/mirea/sdk/genearators/ShopPlannerGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showcase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/showcase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showcase/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/showcase/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/storage/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/target/Storage-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/storage/target/Storage-0.0.1-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/target/Storage-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/ru/mirea/web/controller/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mirea/web/controller/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/ru/mirea/web/service/WebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mirea/web/service/WebService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/application.properties" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,9 +82,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -52,7 +107,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="showcase" />
+        <entry key="$PROJECT_DIR$" value="master" />
         <entry key="$PROJECT_DIR$/logger" value="master" />
       </map>
     </option>
@@ -74,8 +129,12 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="useMavenConfig" value="true" />
+        <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="2jL23LnG0t6oEHofNzqppW13GTZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -85,35 +144,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IP/RetailingPlatform&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15332031&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;168a203d88129bbce0757ad32c7fb0d7&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/IP/RetailingPlatform/storage/src/main/java/ru/mirea/storage/repository",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15332031",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "a5b9ee1c149e6c0fdc048c48194204de",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.mirea.sdk.api" />
+      <recent name="ru.mirea.api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IP\RetailingPlatform\storage\src\main\java\ru\mirea\storage\repository" />
+      <recent name="D:\IP\RetailingPlatform\outlets\src\main\java\ru\mirea\shops" />
+      <recent name="D:\IP\RetailingPlatform\showcase\src\main\java\ru\mirea\showcase" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.mirea.shops.entity.extend" />
+      <recent name="ru.mirea.storage.entity" />
+      <recent name="ru.mirea.shops.repository" />
       <recent name="api" />
     </key>
   </component>
@@ -124,10 +201,11 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.13">
+  <component name="RunManager" selected="Spring Boot.StorageApplication">
     <configuration name="LoggerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="logger" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.mirea.logger.LoggerApplication" />
+      <option name="VM_PARAMETERS" value="-DServer.postgres.host=45.10.55.50 -DServer.postgres.port=5433 -DServer.postgres.login=postgres -DServer.postgres.password=root" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,6 +213,7 @@
     <configuration name="ShopsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="outlets" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.mirea.shops.ShopsApplication" />
+      <option name="VM_PARAMETERS" value="-DServer.postgres.host=45.10.55.50 -DServer.postgres.port=5433 -DServer.postgres.login=postgres -DServer.postgres.password=root" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,6 +221,7 @@
     <configuration name="ShowCaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="showcase" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.mirea.showcase.ShowCaseApplication" />
+      <option name="VM_PARAMETERS" value="-DServer.postgres.host=45.10.55.50 -DServer.postgres.port=5433 -DServer.postgres.login=postgres -DServer.postgres.password=root" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,6 +229,7 @@
     <configuration name="StorageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="storage" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.mirea.storage.StorageApplication" />
+      <option name="VM_PARAMETERS" value="-DServer.postgres.host=45.10.55.50 -DServer.postgres.port=5433 -DServer.postgres.login=postgres -DServer.postgres.password=root" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,31 +237,33 @@
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.mirea.web.WebApplication" />
+      <option name="VM_PARAMETERS" value="-DServer.postgres.host=45.10.55.50 -DServer.postgres.port=5433 -DServer.postgres.login=postgres -DServer.postgres.password=root" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Tomcat 10.1.13" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.13" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="COMMON_VM_ARGUMENTS" value="-DServer.postgres.host=45.10.55.50 -DServer.postgres.port=5433 -DServer.postgres.login=postgres -DServer.postgres.password=root" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="web:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/web" />
           </settings>
         </artifact>
         <artifact name="logger:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/logger_war" />
+            <option name="CONTEXT_PATH" value="/logger" />
           </settings>
         </artifact>
         <artifact name="outlets:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/outlets_war" />
+            <option name="CONTEXT_PATH" value="/outlets" />
           </settings>
         </artifact>
         <artifact name="showcase:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/showcase_war" />
+            <option name="CONTEXT_PATH" value="/showcase" />
           </settings>
         </artifact>
         <artifact name="storage:war">
@@ -292,7 +375,10 @@
       <workItem from="1721159457334" duration="1793000" />
       <workItem from="1721161272145" duration="706000" />
       <workItem from="1721161986099" duration="109000" />
-      <workItem from="1721162165594" duration="322000" />
+      <workItem from="1721162165594" duration="1425000" />
+      <workItem from="1721188993677" duration="3368000" />
+      <workItem from="1721192621356" duration="15017000" />
+      <workItem from="1721219503858" duration="5563000" />
     </task>
     <task id="LOCAL-00001" summary="Инициализация проекта">
       <option name="closed" value="true" />
@@ -366,7 +452,47 @@
       <option name="project" value="LOCAL" />
       <updated>1721162256303</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Заготовка">
+      <option name="closed" value="true" />
+      <created>1721162543945</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721162543945</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Заготовка">
+      <option name="closed" value="true" />
+      <created>1721204551818</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721204551818</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Заготовка">
+      <option name="closed" value="true" />
+      <created>1721213222562</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721213222562</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Заготовка">
+      <option name="closed" value="true" />
+      <created>1721214218397</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721214218397</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Заготовка">
+      <option name="closed" value="true" />
+      <created>1721214771100</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721214771100</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,5 +530,9 @@
     <MESSAGE value="1" />
     <MESSAGE value="Заготовка" />
     <option name="LAST_COMMIT_MESSAGE" value="Заготовка" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -2,6 +2,7 @@ package ru.mirea.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import ru.mirea.web.service.WebService;
 
@@ -22,5 +23,10 @@ public class WebController {
     @GetMapping("fabric")
     public String fabric() {
         return webService.testGetRequest();
+    }
+
+    @GetMapping("plan")
+    public Object plan(@RequestParam(name = "row") int row, @RequestParam(name = "col") int col){
+        return webService.render(row, col);
     }
 }
