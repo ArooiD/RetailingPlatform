@@ -7,7 +7,7 @@ public class EndpointBuilder {
     private final String baseURL;
     private final List<String> nodes = new ArrayList<>();
 
-    public EndpointBuilder(String baseURL){
+    protected EndpointBuilder(String baseURL){
         this.baseURL = baseURL;
     }
 

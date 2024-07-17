@@ -10,18 +10,16 @@ public class WebService {
     private final ModuleSender webSender = ModuleSenderFabric.getWeb();
     public String testGetRequest() {
         EndpointBuilder builder = Endpoint.build();
-        builder.addNode("test").addNode("test").addNode("test");
+        builder.addNode("test");
         Message m = webSender.get(builder.build());
         return m.unWrapBody(String.class);
     }
-
     public String testPostRequest() {
         EndpointBuilder builder = Endpoint.build();
         builder.addNode("test").addNode("test").addNode("test");
         Message m = webSender.post(builder.build(), null);
         return m.unWrapBody(String.class);
     }
-
     public String testPutRequest() {
         EndpointBuilder builder = Endpoint.build();
         builder.addNode("test").addNode("test").addNode("test");
