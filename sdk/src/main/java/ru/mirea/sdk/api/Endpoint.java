@@ -7,18 +7,21 @@ import java.util.Map;
 
 public class Endpoint {
     private final String baseURL;
-    private String module = "";
     private final List<String> nodes;
+    private String module = "";
     private Map<String, Object> params;
-    protected Endpoint(){
+
+    protected Endpoint() {
         this.baseURL = null;
         this.nodes = new ArrayList<>();
     }
-    protected Endpoint(String baseURL, String module, List<String> nodes){
+
+    protected Endpoint(String baseURL, String module, List<String> nodes) {
         this.baseURL = baseURL;
         this.module = module;
         this.nodes = nodes;
     }
+
     protected Endpoint(String baseURL, List<String> nodes) {
         this.baseURL = baseURL;
         this.nodes = nodes;
@@ -28,18 +31,18 @@ public class Endpoint {
         return new EndpointBuilder(ModuleSenderConfiguration.getBaseUrl());
     }
 
-    protected Endpoint setModule(String module){
+    protected Endpoint setModule(String module) {
         this.module = module;
         return this;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         assert baseURL != null;
         StringBuilder sb = new StringBuilder(baseURL);
         sb.append(module);
-        if(nodes.size()>0){
-            sb.append("/").append(String.join("/",nodes));
+        if (nodes.size() > 0) {
+            sb.append("/").append(String.join("/", nodes));
         }
         return sb.toString();
     }

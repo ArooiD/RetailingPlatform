@@ -26,7 +26,7 @@ public class WebController {
     }
 
     @GetMapping("plan")
-    public Object plan(@RequestParam(name = "row") int row, @RequestParam(name = "col") int col){
+    public Object plan(@RequestParam(name = "row") int row, @RequestParam(name = "col") int col) {
         return webService.render(row, col);
     }
 }

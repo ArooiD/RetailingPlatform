@@ -10,10 +10,12 @@ public class Message {
     private final ObjectMapper objectMapper = new ObjectMapper();
     private final HttpStatusCode statusCode;
     private final Object body;
-    protected Message(HttpStatusCode statusCode, Object body){
+
+    protected Message(HttpStatusCode statusCode, Object body) {
         this.statusCode = statusCode;
         this.body = body;
     }
+
     protected Message(HttpStatusCode statusCode, String body) {
         this.statusCode = statusCode;
         this.body = body;
@@ -30,17 +32,19 @@ public class Message {
         body.close();
     }
 
-    public <T> T unWrapBody(Class<T> tClass){
+    public <T> T unWrapBody(Class<T> tClass) {
         return objectMapper.convertValue(this.body, tClass);
     }
 
-    public Integer unWrapCode(){
+    public Integer unWrapCode() {
         return this.statusCode.value();
     }
 
-    public Boolean isSuccess(){
+    public Boolean isSuccess() {
         return !this.statusCode.isError();
     }
 
-    public HttpStatusCode getStatusCode(){return this.statusCode;}
+    public HttpStatusCode getStatusCode() {
+        return this.statusCode;
+    }
 }

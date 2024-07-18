@@ -8,18 +8,17 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RequestCallback;
 import org.springframework.web.client.ResponseExtractor;
-import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-public abstract class AbstractModuleSender implements ModuleSender{
+public abstract class AbstractModuleSender implements ModuleSender {
     protected final InternalLogger logger = InternalLoggerFactory.getInstance(ModuleSender.class);
     protected final RestTemplate restTemplate = new RestTemplate();
     protected String baseURL;
     protected String module;
 
-    AbstractModuleSender(String baseURL, String module){
+    AbstractModuleSender(String baseURL, String module) {
         this.baseURL = baseURL;
         this.module = module;
     }
@@ -30,8 +29,7 @@ public abstract class AbstractModuleSender implements ModuleSender{
         try {
             ResponseEntity<String> request = restTemplate.getForEntity(endpoint.toString(), String.class);
             return new Message(request.getStatusCode(), request.getBody());
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             return new Message(e);
         }
     }
@@ -73,6 +71,7 @@ public abstract class AbstractModuleSender implements ModuleSender{
         restTemplate.execute(endpoint.toString(), HttpMethod.PUT, requestCallback, extractor);
         return result.get();
     }
+
     @Override
     public Message delete(Endpoint endpoint) {
         endpoint.setModule(module);

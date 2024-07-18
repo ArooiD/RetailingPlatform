@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "datasource.multiply",
+      "type": "java.lang.String",
+      "description": "Description for datasource.multiply."
+    }
+  ]
+}
