@@ -23,7 +23,6 @@ public class ShopDto {
     private Map<String, String> info;
     private List<StorageDto> storages;
     private List<StoreDto> stores;
-
     public ShopDto(Shop f) {
         this.id = f.getId();
         this.name = f.getName();

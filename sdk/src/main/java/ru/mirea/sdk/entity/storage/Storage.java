@@ -3,6 +3,7 @@ package ru.mirea.sdk.entity.storage;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
@@ -19,6 +20,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @Table(schema = "storage", name = "storage")
+@RequiredArgsConstructor
 public class Storage {
     @Id
     @Column(name = "id")
@@ -38,9 +40,10 @@ public class Storage {
     private List<Shop> shops;
 
     public Storage(StorageDto storageDto) {
-
-    }
-
-    public Storage() {
+        this.id = storageDto.getId();
+        this.name = storageDto.getName();
+        this.address = storageDto.getAddress();
+        this.info = storageDto.getInfo();
+        this.shops = storageDto.getShops().stream().map(Shop::new).toList();
     }
 }
