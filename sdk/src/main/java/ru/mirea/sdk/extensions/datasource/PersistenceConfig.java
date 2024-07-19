@@ -65,7 +65,7 @@ public class PersistenceConfig {
             }
         } catch (Exception e) {
             logger.error("Failed to initialize EntityManagerFactory", e);
-            throw new RuntimeException("Failed to initialize EntityManagerFactory", e);
+            //throw new RuntimeException("Failed to initialize EntityManagerFactory", e);
         }
 
         return entityManagerFactoryBeans;

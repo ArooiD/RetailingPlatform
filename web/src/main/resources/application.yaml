@@ -18,34 +18,3 @@ spring:
     driver-class-name: org.postgresql.Driver
   application:
     name: "web"
-
-datasource:
-  multiply:
-    - dbName: postgres
-      address: ${Server.postgres.host}
-      port: ${Server.postgres.port}
-      username: ${Server.postgres.login}
-      password: ${Server.postgres.password}
-      persistenceUnitName: postgresPU
-      packagePath: ru.mirea.sdk.entity
-      dbType: postgresql
-      driver-class-name: org.postgresql.Driver
-    - dbName: test
-      address: ${Server.postgres.host}
-      port: ${Server.postgres.port}
-      username: ${Server.postgres.login}
-      password: ${Server.postgres.password}
-      persistenceUnitName: testPU
-      packagePath: ru.mirea.sdk.entity
-      dbType: postgresql
-      driver-class-name: org.postgresql.Driver
-    - dbName: test_2
-      address: ${Server.postgres.host}
-      port: ${Server.postgres.port}
-      username: ${Server.postgres.login}
-      password: ${Server.postgres.password}
-      persistenceUnitName: test2PU
-      packagePath: ru.mirea.sdk.entity
-      dbType: postgresql
-      driver-class-name: org.postgresql.Driver
-

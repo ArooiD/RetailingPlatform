@@ -24,7 +24,7 @@ public class ProviderService {
             return this.providerRepository.findAll().stream().map(provider -> new ProviderDto()).toList();
         } else if (providerDto.getId() != null) {
             Optional<Provider> provider = this.providerRepository.findById(providerDto.getId());
-            return provider.map(worker -> List.of(new ProviderDto())).orElseGet(() -> List.of(new ProviderDto()));
+            return provider.map(worker -> List.of(new ProviderDto(worker))).orElseGet(() -> List.of(new ProviderDto()));
         } else {
             throw new RuntimeException("No worker found");
         }

@@ -31,7 +31,7 @@ public class MultiplyDatabaseService {
     public EntityManager getEntityManager(String persistenceUnitName) {
         EntityManagerFactory emf = entityManagerFactories.get(persistenceUnitName);
         if (emf == null) {
-            throw new IllegalArgumentException("No EntityManagerFactory found for persistence unit: " + persistenceUnitName);
+            //throw new IllegalArgumentException("No EntityManagerFactory found for persistence unit: " + persistenceUnitName);
         }
         return emf.createEntityManager();
     }
